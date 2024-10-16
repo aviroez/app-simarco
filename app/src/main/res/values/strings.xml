@@ -1,0 +1,361 @@
+<resources>
+    <string name="app_name">SIMARCO PP Properti</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Administrator</string>
+    <string name="nav_header_subtitle">admin@ppproperti.com</string>
+
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="clear">Bersihkan</string>
+    <string name="process">Process</string>
+    <string name="save">Save</string>
+    <string name="next">Next</string>
+    <string name="full_name_label">Full Name:</string>
+    <string name="full_name_hint">Full Name…</string>
+    <string name="identity_label">KTP:</string>
+    <string name="identity_hint">No KTP / NIK…</string>
+    <string name="npwp_hint">NPWP…</string>
+    <string name="phone_number_hint">Phone Number…</string>
+    <string name="email_label">Email:</string>
+    <string name="email_hint">Email…</string>
+    <string name="address_correspondent_hint">Alamat Domisili…</string>
+    <string name="full_name">Nama Lengkap</string>
+
+    <string name="signature">Tanda Tangan</string>
+    <string name="hand_phone_label">Handphone:</string>
+    <string name="hand_phone_hint">Handphone…</string>
+    <!--    <string name="url">http://192.168.43.83:8888/pp-property/public/</string>-->
+    <string name="view_label">View:</string>
+    <string name="floor_label">Lantai:</string>
+    <string name="bedroom_label">Bedroom:</string>
+    <string name="rp_0">Rp 0</string>
+    <string name="unit_no_label">Unit No:</string>
+    <string name="payment_schema_label">Skema Pembayaran:</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="login_failed">Login Gagal</string>
+    <string name="login">Login</string>
+    <string name="dp_label">Down Payment:</string>
+    <string name="installment_label">Cicilan:</string>
+    <string name="order_is_added_successfully">Pemesanan berhasil ditambahkan</string>
+    <string name="status">Status</string>
+    <string name="apartment">Apartemen</string>
+    <string name="home">Home</string>
+    <string name="settings">Setting</string>
+    <string name="map">Map</string>
+    <string name="customers">Customer</string>
+    <string name="orders">Pemesanan</string>
+    <string name="logout">Logout</string>
+    <string name="progress">Progress</string>
+    <string name="apartment_is_required">Apartemen harus diisi</string>
+    <string name="full_name_is_required">Nama harus diisi</string>
+    <string name="nik_is_required">NIK wajib diisi</string>
+    <string name="handphone_is_required">No HP wajib diisi</string>
+    <string name="email_is_required">Email wajib diisi</string>
+    <string name="customer_is_added_successfully">Berhasil menambahkan kontak</string>
+    <string name="customer_lead_is_added_successfully">Berhasil menambahkan Calon Customer</string>
+    <string name="customer_lead_is_failed_to_add">Gagal menambahkan Calon Customer</string>
+    <string name="add_customer">Menambah Kontak</string>
+    <string name="add_customer_list">Menambah Kontak Lead</string>
+    <string name="customer_label">Kontak:</string>
+    <string name="apartment_unit_is_already_booked">Maaf! Unit Apartemen sudah dipesan. Mohon pilih yang Lain</string>
+    <string name="initial_payment">Pembayaran Awal</string>
+    <string name="initial_payment_is_required">Pembayaran Awal harus diisi</string>
+    <string name="apartment_unit_is_not_available">Mohon maaf! Unit Apartemen tidak tersedia</string>
+    <string name="booking_fee">Booking Fee</string>
+    <string name="booking_fee_is_required">Booking Fee harus diisi</string>
+    <string name="apartment_tower">Apartment Tower</string>
+    <string name="skip">Lewati</string>
+    <string name="floor">Lantai</string>
+    <string name="unit_number">Nomor Unit</string>
+    <string name="lobby_lift">Lobby Lift</string>
+    <string name="south_view">View Selatan / City View</string>
+    <string name="north_view">View North / Pool View</string>
+    <string name="product_knowledge">Product Knowledge</string>
+    <string name="choose_view_label">Pilih View:</string>
+    <string name="unit_is_not_ready">Unit tidak bisa dipesan</string>
+    <string name="unit_is_ready">Unit siap dipesan</string>
+    <string name="unit_selected">Unit yang dipilih</string>
+    <string name="unit_is_booked">Unit sudah terjual</string>
+    <string name="legend_label">Legenda:</string>
+    <string name="basement">Basement</string>
+    <string name="choose_apartment_unit_first">Pilih unit terlebih dahulu!</string>
+    <string name="order_now">Pesan Sekarang</string>
+    <string name="dp_percent">DP Persen (%)</string>
+    <string name="installment_number">Jumlah Angsuran</string>
+    <string name="count_installment">Hitung Tagihan</string>
+    <string name="detail_schema_payment_label">Detail Skema Pembayaran:</string>
+    <string name="apartment_unit_label">Unit Apartemen:</string>
+    <string name="offered_price_label">Harga Transaksi:</string>
+    <string name="offered_price">Harga Transaksi…</string>
+    <string name="choose_apartment_tower">Pilih Tower</string>
+    <string name="booking_fee_label">Booking Fee:</string>
+    <string name="offered_price_is_required">Harga yang ditawarkan wajib diisi</string>
+    <string name="sps">Surat Pemesanan Sementara</string>
+    <string name="no_label">No:</string>
+    <string name="stairs">Tangga</string>
+    <string name="choose_apartment_unit">Pilih Unit Apartemen</string>
+    <string name="unit_is_reserved">Unit sudah dipesan</string>
+    <string name="choose_payment_schema">Pilih Skema Pembayaran</string>
+    <string name="customer_identity">Identitas Customer</string>
+    <string name="scan_id_tax_id">Foto KTP dan NPWP</string>
+    <string name="scan_identity_card">Foto KTP</string>
+    <string name="scan_identity_name">Foto KTP %1$s</string>
+    <string name="scan_tax_card">Foto NPWP</string>
+    <string name="scan_tax_name">Foto NPWP %1$s</string>
+    <string name="detail_sps">Detail SPS</string>
+    <string name="signature_customer">Tanda Tangan Customer</string>
+    <string name="notification_success">Notifikasi Pemesanan</string>
+    <string name="back">Kembali</string>
+    <string name="our_location">Our Locations</string>
+    <string name="lobby">Lobby</string>
+    <string name="handphone_is_already_registered_with_different_marketing">No HP Sudah terdaftar di User Marketing lain</string>
+    <string name="email_is_already_registered_with_different_marketing">Email sudah terdaftar oleh User marketing yang lain</string>
+    <string name="nik_is_already_registered_with_different_marketing">NIK sudah terdaftar di user marketing lain</string>
+    <string name="scanning_your_identity_card">Ambil gambar dari KTP pemesan</string>
+    <string name="scanning_your_tax_card">Ambil gambar dari NPWP pemesan</string>
+    <string name="make_sure_to_put_it_on_the_box">Pastikan tulisan terbaca dengan jelas pada kotak di atas</string>
+    <string name="recapture">Ambil Ulang</string>
+    <string name="capture">Ambil Gambar</string>
+    <string name="address_ktp_hint">Alamat Lengkap KTP...</string>
+    <string name="confirmation">Konfirmasi</string>
+    <string name="sure_to_skip_capturing_identity_card">KTP belum tersimpan. Anda yakin ingin melanjutkan?</string>
+    <string name="sure_to_skip_capturing_tax_card">KTP belum tersimpan. Anda yakin ingin melanjutkan?</string>
+    <string name="customer">Customer</string>
+    <string name="stock_unit">Stock Unit</string>
+    <string name="email_or_password_invalid">Email / password tidak cocok</string>
+    <string name="events">Events</string>
+    <string name="event_label">Event:</string>
+    <string name="activity_label">Activitas:</string>
+    <string name="event_name_label">Nama Event</string>
+    <string name="event_name_hint">Nama Event...</string>
+    <string name="activity_name_label">Nama Aktivitas</string>
+    <string name="activity_name_hint">Nama Aktivitas</string>
+    <string name="start_date_label">Dari Tanggal:</string>
+    <string name="start_date_hint">Dari Tanggal...</string>
+    <string name="end_date_label">Sampai Tanggal:</string>
+    <string name="end_date_hint">Sampai Tanggal...</string>
+    <string name="address_event_hint">Alamat Event...</string>
+    <string name="address_event_label">Alamat Event:</string>
+    <string name="activity_is_required">Activity harus diisi!</string>
+    <string name="event_is_required">Event harus diisi!</string>
+    <string name="capture_image_refreshed">Ambil Ulang gambar</string>
+    <string name="add_event">Tambah Event</string>
+    <string name="activity">Activity</string>
+    <string name="from_label">Dari:</string>
+    <string name="to_label">Sampai:</string>
+    <string name="choose_activity_label">Pilih Activity:</string>
+    <string name="please_choose_activity">Pilih activity terlebih dahulu!</string>
+    <string name="event_activity_is_successfully_updated"><![CDATA[Event & Aktivitas berhasil ditambahkan]]></string>
+    <string name="gender_label">Jenis Kelamin:</string>
+    <string name="male">Laki-laki</string>
+    <string name="female">Perempuan</string>
+
+    <string name="gender_is_required">Jenis Kelamin wajib diisi</string>
+
+    <string name="import_file">Import File</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="processing_order_please_wait">Memproses pemesanan. Mohon menunggu...</string>
+    <string name="alias_label">Nama Panggilan:</string>
+    <string name="position_label">Jabatan:</string>
+    <string name="signature_label">Tanda Tangan:</string>
+    <string name="my_profile">My Profile</string>
+    <string name="edit_profile">Ubah Profile</string>
+    <string name="alias">Nama Panggilan</string>
+    <string name="email">Email</string>
+    <string name="handphone">Handphone</string>
+    <string name="alias_is_required">Nama Panggilan wajib diisi</string>
+    <string name="signature_is_required">Tanda Tangan wajib diisi</string>
+    <string name="upload">Upload</string>
+    <string name="booking_no_with">No SPS: %1$s</string>
+    <string name="order_no_with">No SP: %1$s</string>
+    <string name="booking_letter">Surat Pemesanan Sementara</string>
+    <string name="order_letter">Surat Pemesanan</string>
+    <string name="choose_or_add_event">Pilih atau Tambah Event</string>
+    <string name="event_name">Nama Event</string>
+    <string name="description_event">Deskripsi Event</string>
+    <string name="address_event">Alamat Event</string>
+    <string name="start_date">Tanggal Mulai</string>
+    <string name="end_date">Tanggal Selesai</string>
+    <string name="sure_to_exit_this_app">Keluar dari aplikasi ini?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="new_version_found_please_update">Aplikasi Versi terbaru sudah tersedia. Segera update dari Play Store</string>
+    <string name="update_app">Update Sekarang</string>
+    <string name="exit">Keluar</string>
+
+    <string name="tos_title">SYARAT SYARAT dan KETENTUAN</string>
+    <string name="tos_detail1">
+        A. Harga Jual\n
+	\t		1. Harga jual SUDAH termasuk :\n
+	\t\t		a. PPN 10% (sepuluh persen)\n
+	\t\t		b. Bonus I Gimick ( Sesuai Program Yang berlaku )\n
+	\t		2. Harga jual BELUM termasuk :\n
+	\t\t		a. Biaya PPJB (Perjanjian Pendahuluan Jual Beli) dan AJB (Akta Jual Beli) di hadapan Notaris/Pejabat pembuat PPAT.\n
+    \t\t        b. Biaya BPHTB (Bea Perolehan Hak atas Tanah dan Bangunan) sesuai) sesuai peraturan yang berlaku.\n
+	\t\t		c. Biaya pemecahan SHMSRS (Serifikat Hak Milik atas Satuan Rumah Susun).\n
+	\t\t		d. Biaya pengurusan KPA (Kredit Pemilikan Apartemen) pada Bank, apabila pembayaran melalui KPA.\n
+	\t\t		e. Pajak Pertambahan Nilai Barang Mewah (PPNBM) apabila ada.
+    </string>
+    <string name="tos_detail2">
+		B. Ketentuan Administrasi\n
+	\t		1. Nama Pembeli adalah Nama pemesan yang tercantum di dalam Surat Pesanan, PPJB dan AJB.\n
+	\t		2. Apabila pemesan mengalihkan unit pesanan kepada pihak lain akan dikenakan biaya administrasi sebesar 2,5% (Dua koma lima persen) dari harga jual dengan persyaratan minimal melunasi pembayaran 20% (Dua puluh persen) dari harga jual kecuali hanya diberikan kepada suami/istri atau orang yang bertalian keluarga dan tercantum dalam satu Kartu Keluarga.\n
+	\t		3. Pemesan wajib mencantumkan detail informasi dengan sebenar-benarnya,  aotara  lain nama  Pemesan dan Nomor unit sesuai yang tertera dalam Surat Pesanan ini.\n
+	\t		4. Surat Pemesanan Asli akan diserahkan selambat-lambatnya 14 ( Empat Belas ) hari setelah lunasnya Booking Fee.
+    </string>
+    <string name="tos_detail3">
+		C. Ketentuan Cara Pembayaran\n
+	\t		1. Pembayaran menggunakan <strong>Virtual Account</strong> masing-masing pemesan yang diberikan oleh PT. PP Properti,Tbk\n
+	\t		2. Uang Tanda Jadi (UTJ) I Booking Fee yang telah diterima tidak dapat diminta kembali (Not Refundable) dengan alasan apapun.\n
+	\t		3. Apabila sampai dengan tanggal yang disepakati dalan Surat Pesanan Sementara (SPS) ini Pemesan tidak melakukan pembayaran yang sudah  jatuh tempo setelah Uang Tanda Jadi (Uang Muka I), atau melebihi waktu yang ditentukan maka Harga Jual tidak mengikat.\n
+	\t		4. Apabila terjadi pembatalan dari Pemesan dengan alasan apapun, Uang Tanda Jadi yang sudah dibayarkan tidak dapat ditarik kembali ( Not Refundable ) dan Developer  berhak menjual kepada Pihak Ketiga.
+    </string>
+    <string name="tos_detail4">
+		D. Ketentuan Lain-lain\n
+	\t		1. Pemesan bersedia memenuhi segala syarat dan ketentuan yang ditetapkan dan disepakati.\n
+	\t		2. Ketentuan - ketentuan lain yang belum tercantum dalam Surat Pemesanan Sementara ini akan diatur dalam Surat Pesanan Asli dan lebih lanjut dalan PPJB (Perjanjian Pendahuluan Jual Beli).
+    </string>
+    <string name="tos_footer">Dengan ditandatanganinya Surat Pesanan Sementara ini, Pemesan menyatakan setuju mengenai pesanan sebagaimana tertera diatas dengan penuh kesadaran tanpa ada tekanan dan paksaan dari pihak manapun.</string>
+    <string name="identity_captured_success">Gambar KTP</string>
+    <string name="identity_captured_success_desc">Berhasil mengambil gambar KTP. Tekan NEXT untuk melanjutkan!</string>
+    <string name="tax_card_captured_success">Gambar NPWP</string>
+    <string name="tax_card_captured_success_desc">Berhasil mengambil gambar NPWP. Tekan NEXT untuk melanjutkan!</string>
+    <string name="detail_contact">Detail Kontak</string>
+    <string name="address_label">Alamat:</string>
+    <string name="specify_your_signature">Mohon Sertakan tanda tangan anda terlebih dahulu</string>
+    <string name="profile_edit_successfully">Data berhasil diubah</string>
+    <string name="warning">Peringatan</string>
+    <string name="signature_is_not_specified">Data Profil dan Tanda Tangan belum diubah</string>
+    <string name="update_now">Ubah Sekarang</string>
+    <string name="event_name_is_required">Nama Event harus diisi</string>
+    <string name="date_is_required">Tanggal Harus diisi</string>
+    <string name="list_event">Daftar Event</string>
+    <string name="choose_activity">Pilih Aktivitas</string>
+    <string name="list_activity_log">Daftar Log Aktivitas</string>
+    <string name="add_activity_log">Tambah Log Aktivitas</string>
+    <string name="event_Activity_log_id_not_added">Log Aktivitas hari ini belum ditambahkan</string>
+    <string name="start_sould_not_more_than_end_date">Tanggal Mulai tidak boleh melebihi tanggal Selesai</string>
+    <string name="event_is_added_successfully">Event Berhasil ditambahkan</string>
+    <string name="handphone_is_invalid">Handphone is Invalid</string>
+    <string name="gps_is_not_active">GPS Belum Diaktifkan</string>
+    <string name="activate_gps_now">Aktifkan GPS Sekarang</string>
+    <string name="cancel">Batal</string>
+    <string name="activate">Aktifkan</string>
+    <string name="dp_percent_should_be_more_than_0">DP Persen tidak boleh kosong</string>
+    <string name="installment_should_be_between_1_and_12">Tagihan maksimal 12x</string>
+    <string name="default_time">00:00</string>
+    <string name="old_password">Password Lama</string>
+    <string name="new_password">Password Baru</string>
+    <string name="retype_new_password">Ulangi Password Baru</string>
+    <string name="update_password">Ubah Password</string>
+    <string name="old_password_is_required">Password Lama harus diisi</string>
+    <string name="new_password_is_required">Password Baru harus diisi</string>
+    <string name="retype_new_password_is_required">Ulangi password baru</string>
+    <string name="new_password_and_old_password_should_not_be_similar">Password Baru dan Lama tidak boleh sama</string>
+    <string name="retype_new_password_should_be_same">Password baru harus sama</string>
+    <string name="customer_detail">Detail Customer</string>
+    <string name="tos">Syarat dan Ketentuan</string>
+    <string name="order_list">Daftar Pemesanan</string>
+    <string name="order_detail">Detail Pemesanan</string>
+    <string name="detail_activity_log">Detail Log Aktivitas</string>
+    <string name="offered_price_sould_not_be_more_than">Selisih Harga tidak boleh lebih dari %1$s</string>
+    <string name="dp_percent_should_be_between">DP harus di antara %1$d dan %2$d</string>
+    <string name="profile">Profil</string>
+    <string name="customer_list_empty">Daftar Kontak Kosong</string>
+    <string name="customer_lead_list_empty">Daftar Calon Customer Kosong</string>
+    <string name="order_list_empty">Daftar Pemesanan Kosong</string>
+    <string name="event_list_empty">Daftar Event Kosong</string>
+    <string name="event_is_not_yet_started">Event Belum Dimulai</string>
+    <string name="event_is_already_finished">Event Sudah Selesai</string>
+    <string name="calculate">Hitung</string>
+    <string name="amount">Nominal</string>
+    <string name="interest_percent">Bunga %</string>
+    <string name="loan_term">Tenor (tahun)</string>
+    <string name="calculator_loan">Kalkulator Loan</string>
+    <string name="amount_is_required">Nominal Harus diisi</string>
+    <string name="loan_term_is_required">Tenor Harus diisi</string>
+    <string name="percent_is_required">Persen Harus diisi</string>
+    <string name="dp_installment">DP x bayar</string>
+    <string name="cash_label">Tunai:</string>
+    <string name="previous_order_already_exist">Pemesanan sebelumnya masih belum diselesaikan. Lanjutkan?</string>
+    <string name="user_access_invalid">Pengguna tidak memiliki akses!</string>
+    <string name="apartment_label">Apartemen:</string>
+    <string name="delete">Hapus</string>
+    <string name="choose_apartment">Pilih Apartment</string>
+    <string name="capture_event">Mengambil Gambar Event</string>
+    <string name="show">Tampilkan</string>
+    <string name="activity_result">Hasil Aktivitas</string>
+    <string name="capture_result">Hasil Gambar</string>
+    <string name="classification_label">Klasifikasi:</string>
+    <string name="response_label">Respon Customer:</string>
+    <string name="information">Informasi</string>
+    <string name="buy_date">Tanggal Beli</string>
+    <string name="product_label">Product:</string>
+    <string name="product_type_label">Product Type:</string>
+    <string name="unit_price_label">Harga Unit:</string>
+    <string name="unit">Unit</string>
+    <string name="birth_date">Tanggal Lahir</string>
+    <string name="filter">Filter</string>
+    <string name="search">Cari</string>
+    <string name="customer_candidate">Calon Customer</string>
+    <string name="product">Product</string>
+    <string name="price">Price</string>
+    <string name="rp">Rp </string>
+    <string-array name="view_arrays">
+        <item>@string/south_view</item>
+        <item>@string/north_view</item>
+    </string-array>
+    <string-array name="classification_codes">
+        <item>unknown</item>
+        <item>leads</item>
+        <item>prospect</item>
+        <item>hot_prospect</item>
+        <item>customer</item>
+        <item>cancel</item>
+    </string-array>
+    <string-array name="classification_arrays">
+        <item>Unknown</item>
+        <item>Leads</item>
+        <item>Prospect</item>
+        <item>Hot Prospect</item>
+        <item>Customer</item>
+        <item>Cancel</item>
+    </string-array>
+    <string-array name="response_codes">
+        <item>unknown</item>
+        <item>answer_waiting</item>
+        <item>visit_mo</item>
+        <item>deal_processing</item>
+        <item>deal_success</item>
+        <item>not_interested</item>
+        <item>invalid_number</item>
+        <item>complain</item>
+        <item>no_respond</item>
+    </string-array>
+    <string-array name="response_arrays">
+        <item>Unknown</item>
+        <item>Answer Waiting</item>
+        <item>Visit Mo</item>
+        <item>Deal Processing</item>
+        <item>Deal Success</item>
+        <item>Not Interested</item>
+        <item>Invalid Number</item>
+        <item>Complain</item>
+        <item>No Respond</item>
+    </string-array>
+    <string-array name="type_codes">
+        <item>residential</item>
+        <item>commercial</item>
+        <item>hospitality</item>
+    </string-array>
+    <string-array name="type_arrays">
+        <item>Residential</item>
+        <item>Commercial</item>
+        <item>Hospitality</item>
+    </string-array>
+</resources>

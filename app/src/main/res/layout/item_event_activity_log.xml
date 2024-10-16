@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.beardedhen.androidbootstrap.BootstrapWell
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_md">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:id="@+id/text_activity_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="@string/activity"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:id="@+id/text_created_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:text="dd/mm/yyyy"
+                    app:bootstrapBrand="info" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_xs"
+                android:layout_marginBottom="@dimen/margin_md"
+                android:background="@drawable/separator_horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_md">
+
+                    <TextView
+                        android:id="@+id/text_address_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/text_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="175dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_md"
+                    android:scaleType="centerCrop"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.beardedhen.androidbootstrap.BootstrapWell>
+
+</LinearLayout>

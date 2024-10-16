@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.CaptureEventFragment">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        app:cameraAudio="off"
+        app:cameraExperimental="true"
+        app:cameraFlash="auto"
+        app:cameraMode="picture"
+        app:cameraPreview="glSurface">
+
+        <!-- Watermark! -->
+        <TextView
+            android:id="@+id/text_view_watermark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom|end"
+            android:shadowColor="@android:color/black"
+            android:text="@string/scan_identity_card"
+            android:textColor="@color/gray_300"
+            app:layout_drawOnVideoSnapshot="true"
+            app:layout_drawOnPictureSnapshot="true"
+            app:layout_drawOnPreview="true" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp" />
+
+    </com.otaliastudios.cameraview.CameraView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginBottom="32dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:backgroundTint="@color/bootstrap_brand_secondary_fill"
+            app:srcCompat="@drawable/ic_chevron_circle_left" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:backgroundTint="@color/bootstrap_brand_danger"
+            app:srcCompat="@drawable/ic_camera_retro" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:backgroundTint="@color/bootstrap_brand_primary"
+            app:srcCompat="@drawable/ic_chevron_circle_right" />
+
+    </LinearLayout>
+
+</FrameLayout>

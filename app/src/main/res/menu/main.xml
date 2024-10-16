@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_edit_profiles"
+        android:orderInCategory="100"
+        android:title="@string/edit_profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_update_password"
+        android:orderInCategory="100"
+        android:title="@string/update_password"
+        app:showAsAction="never" />
+</menu>

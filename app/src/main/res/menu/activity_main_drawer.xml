@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_apartment"
+            android:icon="@drawable/ic_building"
+            android:title="@string/apartment" />
+        <item
+            android:id="@+id/nav_apartment_tower"
+            android:icon="@drawable/ic_building"
+            android:visible="false"
+            android:title="@string/apartment_tower" />
+        <item
+            android:id="@+id/nav_list_orders"
+            android:icon="@drawable/ic_marketings"
+            android:title="@string/orders" />
+        <item
+            android:id="@+id/nav_list_customers"
+            android:icon="@drawable/ic_contact"
+            android:title="@string/customers" />
+        <item
+            android:id="@+id/nav_list_events"
+            android:icon="@drawable/ic_newspaper"
+            android:title="@string/events" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map_marker_alt"
+            android:title="@string/map" />
+        <item
+            android:id="@+id/nav_product"
+            android:icon="@drawable/ic_hotel"
+            android:visible="false"
+            android:title="@string/product_knowledge" />
+        <item
+            android:icon="@drawable/ic_chart_line"
+            android:title="@string/progress"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_calculator"
+            android:icon="@drawable/ic_calculator"
+            android:title="@string/calculator_loan" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"
+            android:visible="false" />
+    </group>
+
+    <item android:title="@string/profile">
+        <menu>
+            <item
+                android:id="@+id/nav_edit_profile"
+                android:icon="@drawable/ic_user_edit"
+                android:title="@string/edit_profile" />
+            <item
+                android:id="@+id/nav_update_password"
+                android:icon="@drawable/ic_user_lock"
+                android:title="@string/update_password" />
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_logout"
+                android:visible="false"
+                android:title="@string/login" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

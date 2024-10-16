@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="@dimen/margin_xxxl"
+        android:layout_marginLeft="@dimen/bottom_floating_margin"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="@dimen/margin_xxxl"
+        android:layout_marginRight="@dimen/bottom_floating_margin"
+        android:layout_marginBottom="@dimen/margin_xxl"
+        app:srcCompat="@drawable/ic_simarco_splash"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

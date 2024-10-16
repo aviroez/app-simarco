@@ -1,0 +1,3193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.ppproperti.simarco.fragments.ApartmentUnitFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.ApartmentUnitFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        app:cardElevation="2dp"
+        tools:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/choose_view_label" />
+
+            <Spinner
+                android:id="@+id/spinner_view"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:dropDownWidth="match_parent"
+                android:entries="@array/view_arrays"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_view_south"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_legend"
+        android:layout_below="@id/layout_view"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/floor" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_span="16"
+                                android:gravity="center"
+                                android:text="@string/unit_number" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="11" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="10" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stairs" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="9" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="8" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="5" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="3" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="2" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/lobby_lift" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/textView26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="35" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="33" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="12" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="L" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="11" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="O" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="10" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="T" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="B" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="9" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="A" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="B" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="8" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="N" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Y" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="7" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="G" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="6" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="G" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="L" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="5" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="A" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="I" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="3" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="F" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="2" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="T" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_35"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_33"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="1" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapLabel
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="2"
+                                android:gravity="center"
+                                android:text="@string/lobby"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapLabel
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="16"
+                                android:gravity="center"
+                                android:text="@string/basement"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_view_north"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_legend"
+        android:layout_below="@id/layout_view"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/floor" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_span="16"
+                                android:gravity="center"
+                                android:text="@string/unit_number" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="12" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="15" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="16" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="17" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="18" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="19" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="20" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="21" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="22"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="23" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="25" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="26" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="27" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="28" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="29" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="30" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="32" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="12" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_12_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="11" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_11_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="10" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_10_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="9" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_9_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="8" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_8_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="7" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_7_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="6" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_6_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="5" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_5_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="3" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_3_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="2" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_23"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_25"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_26"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_27"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_28"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_29"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_2_32"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="1" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="44,75"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="21"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_1e"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_span="2"
+                                android:text="1E"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_1d"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_span="2"
+                                android:text="1D"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_1c"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_span="2"
+                                android:text="1C"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_1b"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_span="2"
+                                android:text="1B"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapButton
+                                android:id="@+id/button_1_1a"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_span="2"
+                                android:text="1A"
+                                app:bootstrapBrand="regular" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapLabel
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="3"
+                                android:gravity="center"
+                                android:text="@string/lobby"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="" />
+
+                            <com.beardedhen.androidbootstrap.BootstrapLabel
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_span="16"
+                                android:gravity="center"
+                                android:text="@string/basement"
+                                app:bootstrapBrand="regular" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_view_custom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_legend"
+        android:layout_below="@id/layout_view"
+        android:layout_margin="5dp"
+        android:fillViewport="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:id="@+id/custom_table_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/floor" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_span="16"
+                                android:gravity="center"
+                                android:text="@string/unit_number" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_legend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_button"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/legend_label" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/unit_is_not_ready" />
+
+                        <com.beardedhen.androidbootstrap.BootstrapButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            app:bootstrapBrand="regular" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.beardedhen.androidbootstrap.BootstrapButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            app:bootstrapBrand="secondary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/unit_is_ready" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <com.beardedhen.androidbootstrap.BootstrapButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            app:bootstrapBrand="warning" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/unit_is_reserved" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/unit_is_booked" />
+
+                        <com.beardedhen.androidbootstrap.BootstrapButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            app:bootstrapBrand="danger" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <com.beardedhen.androidbootstrap.BootstrapButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            app:bootstrapBrand="success" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="@string/unit_selected" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:text="@string/back"
+            app:bootstrapBrand="regular"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/button_process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/process"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+    </LinearLayout>
+
+</RelativeLayout>

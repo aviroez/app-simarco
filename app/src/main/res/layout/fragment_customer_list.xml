@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.ppproperti.simarco.fragments.CustomerListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".fragments.CustomerListFragment">
+
+<!--
+   <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:text="@string/add_customer"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="md"
+        android:visibility="invisible"
+        app:fontAwesomeIcon="fa_plus" />
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/tab_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/item_customer" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_lead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/item_customer" />
+
+        <ProgressBar
+            android:id="@id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_md"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_add_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/baseline_person_add_black_18dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@id/tab_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/colorPrimaryDark"
+        app:tint="@color/white" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customer" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_customer_lead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calon Customer" />
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

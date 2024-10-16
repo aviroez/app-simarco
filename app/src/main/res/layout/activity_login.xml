@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    tools:context=".activities.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/text_email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:layout_marginBottom="10dp"
+            android:hint="@string/prompt_email"
+            android:inputType="textWebEmailAddress"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/bootstrap_gray"
+            android:textColorHint="@color/bootstrap_gray" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/text_email">
+
+            <EditText
+                android:id="@+id/text_password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+                android:hint="@string/prompt_password"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:selectAllOnFocus="true"
+                android:textColor="@color/bootstrap_gray"
+                android:textColorHint="@color/bootstrap_gray"
+                tools:layout_marginTop="5dp" />
+
+            <ImageView
+                android:id="@+id/image_show"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_lg"
+                android:layout_marginRight="@dimen/margin_lg"
+                android:alpha=".5"
+                android:padding="@dimen/padding_lg"
+                android:tint="@color/bootstrap_gray"
+                app:srcCompat="@drawable/ic_eye" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:visibility="visible"
+            app:srcCompat="@drawable/image_background_pp_properti_gradasi" />
+
+    </LinearLayout>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/button_login"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:autoText="false"
+        android:background="@color/white"
+        android:enabled="true"
+        android:text="@string/login"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:bootstrapBrand="primary"
+        app:bootstrapSize="xl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLogin"
+        app:roundedCorners="true" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="99dp"
+        android:layout_height="103dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/pp"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="184dp"
+        tools:paddingRight="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="56dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_simarco"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
